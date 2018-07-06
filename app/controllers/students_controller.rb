@@ -4,6 +4,7 @@ class StudentsController < ApplicationController
   end
 
   def show
+    binding.pry
     @student = Student.find_by(id: params[:id])
   end
 end
